@@ -30,8 +30,8 @@ For example, from a [PR-reviews discussion](https://leanprover.zulipchat.com/#na
 | api design | 54 | 2861 | Reuse existing abstractions (284) |
 | existing api | 50 | 1497 | Reuse existing theorems and definitions (323) |
 | file organization | 42 | 2458 | Put declarations in their canonical home (730) |
-| other | 23 | 34 | |
-| performance | 10 | 12 | |
+| other | 23 | 34 | Name lemmas from outermost to innermost structure (3) |
+| performance | 10 | 12 | Cache typeclass synthesis outside hot paths (2) |
 
 Comparison with official Mathlib documentation:
 - **58% NEW**: not covered by any official guide
