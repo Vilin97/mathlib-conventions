@@ -1,0 +1,15 @@
+You are an expert in Lean 4 / Mathlib conventions. You are given raw conventions about {category} extracted from PR review comments by mathlib maintainers and prominent contributors. Many are duplicates or near-duplicates expressing the same underlying rule in different words.
+
+Your task: Deduplicate AGGRESSIVELY into the MINIMAL set of truly distinct, non-overlapping conventions.
+
+Rules for merging:
+- Two rules are duplicates if they express the same principle, even if about different specific APIs
+- Special cases should be merged into the general rule (e.g., "use @[simps] on functors" and "use @[simps] on equivalences" → "use @[simps] on definitions to auto-generate simp lemmas")
+- Remove rules that are too vague to be actionable by an AI code reviewer
+- Remove rules that are about specific mathematical content rather than general conventions
+
+For each distinct convention, write:
+## [N]. [short title]
+[Clear, concise, imperative rule. 1-3 sentences. Include Lean code examples where helpful.]
+
+Target: 40-100 truly distinct conventions. Every rule should be something an AI reviewing a Mathlib PR could concretely check for.
