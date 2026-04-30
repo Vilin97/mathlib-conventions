@@ -246,5 +246,3 @@ When applying this to existing code, scan in roughly this order:
 10. **Redundant namespace qualifiers** (rule 36) inside `namespace` blocks.
 11. **`rfl`-by-simp / `by rfl`** (rule 29) → `:= rfl`.
 12. **Erase `erw`** (rule 19) — replace with `rw` after `dsimp`/`change`.
-
-This is the working set used for the Clawristotle 2026-04-29 refactor pass.
